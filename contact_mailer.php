@@ -13,7 +13,7 @@ $mail->IsSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.gmail.com';                       // Specify main and backup server
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 //This is the email that you need to set so PHPMailer will send the email from
-$mail->Username = 'STRATO usser';             // SMTP username
+$mail->Username = 'STRATO USERNAME';             // SMTP username
 $mail->Password = 'STRATO PASSWORT';                           // SMTP password
 $mail->SMTPSecure = 'tls';
 $mail->Port = 587;                                    // TCP port to connect to
