@@ -1,0 +1,501 @@
+/* COMPONETS */
+/* ===================================== */
+
+/* - Splash headers - */
+
+body {
+	background-color: $color-dark;
+}
+
+.splash-header {
+	/* Firefox */
+	height: -moz-calc(100vh - 0px);
+	/* WebKit */
+	height: -webkit-calc(100vh - 0px);
+	/* Opera */
+	height: -o-calc(100vh - 0px);
+	/* Standard */
+	height: calc(100vh - 0px);
+	width: 100%;
+	position: relative;
+	display: block
+}
+
+@media screen and (max-width:768px) {
+	.splash-header {
+		/* Firefox */
+		height: -moz-calc(100vh - 0px);
+		/* WebKit */
+		height: -webkit-calc(100vh - 0px);
+		/* Opera */
+		height: -o-calc(100vh - 0px);
+		/* Standard */
+		height: calc(100vh - 0px);
+		width: 100%;
+	}
+}
+
+.full-height {
+	height: 100vh;
+	max-width: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+/* - Sections - */
+
+/* - General Section Classes - */
+.section {
+	position: relative;
+	padding: 96px 0;
+		&.section-dark{
+			background-color: $color-dark;
+		}
+		&.section-semi-dark {
+			background-color: $color-light;
+		}
+}
+
+section {
+	z-index: 10; /* Fix for fixed footer */
+}
+
+.section header {
+	margin-bottom: 20px
+}
+
+/* -- Section Decorations -- */
+
+[class*="decor-"] {
+	position: absolute;
+	width: 100%;
+	height: 60px;
+	left: 0;
+		svg {
+			height: 101%; // fix rendering in ie and firefox
+		}
+}
+
+.decor-top {
+	bottom: 100%;
+}
+
+.decor-bottom {
+	top: 100%;
+}
+
+.decor {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+}
+
+/* - Sections height - */
+
+.section-short {
+	padding: 60px 0;
+}
+.section-tiny {
+	padding: 24px 0;
+}
+.section-nopadding {
+	padding: 0 !important;
+}
+
+/* - Full height Sections - */
+
+.section-fullheight {
+	min-height: 100vh;
+}
+
+
+// Vertical allignment rows
+
+@media (min-width: 1400px) {
+	.section {
+		padding: 120px 0;
+	}
+	.section-short {
+		padding: 72px 0;
+	}
+	.section-tiny {
+	padding: 24px 0;
+	}
+}
+
+@media (max-width: 767px) {
+	.section {
+	padding: 60px 0;
+	}
+	.section-short {
+	padding: 48px 0;
+	}
+	.section-tiny {
+	padding: 24px 0;
+	}
+	[class*="decor-"] {
+	height: 36px;
+	}
+	.container {
+	padding: 0 20px;
+	}
+	.section .section .container {
+	padding: 0;
+	width: auto;
+	}
+}
+
+/* - Icon Block - */
+
+.icon-block {
+	color:$text-color;
+}
+
+.icon-block p:after {
+	content: "//////////";
+	font-size: 10px;
+	margin-top: 20px;
+	color:$text-color-primary;
+	display: block;
+	font-weight: 900;
+}
+
+.icon-block p {
+	color:$text-color-semi;
+}
+
+.icon-block i{
+	font-size: 50px
+}
+
+.icon-block-title {
+	display: block;
+	font-family: "Montserrat", sans-serif;
+	font-size: 20px;
+	margin: 10px 0px;
+}
+
+/* - Upcoming Events - */
+
+.event-wrap {
+	width:auto;
+	background-color: rgba(23,23,32,.7);
+	margin-left: 20px;
+	padding: 30px;
+	max-width:100%;
+}
+
+.event-icons {
+	text-transform: uppercase;
+	color:$text-color;
+}
+
+.event-icons i {
+	font-size: 20px;
+	color: $text-color-primary;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top:20px
+}
+
+.event-icons i.ion-ios-location {
+	left:2px
+}
+
+.event-icons h1,
+.event-icons h2,
+.event-icons h3,
+.event-icons h4,
+.event-icons h5 {
+	padding-left: 20px;
+	padding-top: 20px;
+}
+
+.event-icons h1 small,
+.event-icons h2 small,
+.event-icons h3 small,
+.event-icons h4 small,
+.event-icons h5 small{
+	font-size: 12px;
+	color:$text-color-semi;
+}
+
+.event-info p{
+	padding-left: 20px;
+	padding-top: 20px;
+	color: $text-color-semi;
+}
+
+.event-info button,
+.event-info a.btn {
+	margin-left: 20px;
+	margin-top: 15px
+}
+
+
+.event-title {
+	color: $text-color;
+	margin-bottom: 0
+}
+
+.event-title:after {
+	content: "//////////";
+	font-size: 10px;
+	margin-top: 0px;
+	color:$text-color-primary;
+	display: block;
+	font-weight: 900;
+}
+
+/* - Pricing Tables - */
+
+.price-table-wrap {
+	background-color:$color-light;
+	min-height:200px;
+	height: auto;
+	width: 100%;
+	padding: 30px;
+	@media (max-width:991px) {
+		margin-top: 20px
+	}
+}
+
+.price-table-wrap .type {
+	display: block;
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+	color:$text-color;
+	margin-bottom: 10px;
+	opacity:.5
+}
+
+.price-table-wrap .price {
+	display: block;
+	color:$text-color;
+	position: relative;
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 10px;
+}
+
+.price-table-wrap .price small{
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.price-table-wrap .price:after {
+	content: "///////////////";
+	font-size: 10px;
+	margin-top: 20px;
+	color:$text-color-primary;
+	display: block;
+	font-weight: 900;
+}
+
+.price-table-wrap .price-coin{
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.price-table-wrap ul {
+	list-style: none;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	margin-left: 0;
+	padding-left: 0;
+	position: relative;
+}
+
+.price-table-wrap ul  li{
+	color:$text-color;
+	position: relative;
+	padding-left: 25px;
+	font-size: 16px;
+	margin-bottom: 5px;
+	text-transform: uppercase
+}
+
+.price-table-wrap ul  li i{
+	position: absolute;
+	left: 0;
+	font-size: 14px
+}
+
+.price-table-wrap a.btn,
+.price-table-wrap button{
+	margin-left: 25px
+}
+
+.price-table-wrap p{
+	margin-left: 25px;
+	margin-bottom: 20px;
+}
+
+.icon-left > i {
+	position: absolute;
+	left: 0px;
+	color:$color-primary;
+}
+
+/* - Reviews - */
+
+.review-wrap {
+	width:auto;
+	background-color: rgba(23,23,32,.7);
+	margin-left: 20px;
+	padding: 30px;
+	max-width:100%;
+}
+
+.review-avatar{
+	display: inline-block;
+	float: right
+}
+
+.review-icons {
+	text-transform: uppercase;
+	color:$text-color;
+}
+
+.review-icons i {
+	font-size: 20px;
+	color: $text-color-primary;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top:20px
+}
+
+.review-icons i.ion-ios-location {
+	left:2px
+}
+
+.review-icons h1,
+.review-icons h2,
+.review-icons h3,
+.review-icons h4,
+.review-icons h5 {
+	padding-left: 20px;
+	padding-top: 20px;
+}
+
+.review-icons h1 small,
+.review-icons h2 small,
+.review-icons h3 small,
+.review-icons h4 small,
+.review-icons h5 small{
+	font-size: 12px;
+	color:$text-color-semi;
+}
+
+.review-info p{
+	padding-left: 20px;
+	padding-top: 20px;
+	color: $text-color-semi;
+}
+
+.review-info button,
+.review-info a.btn {
+	margin-left: 20px;
+	margin-top: 15px
+}
+
+
+.review-title {
+	color: $text-color;
+	margin-bottom: 0
+}
+
+.review-title:after {
+	content: "//////////";
+	font-size: 10px;
+	margin-top: 0px;
+	color:$text-color-primary;
+	display: block;
+	font-weight: 900;
+}
+
+/* - Blockquotes - */
+
+blockquote {
+	border:none;
+	margin: 0;
+}
+
+blockquote cite {
+	display: block;
+	margin-top: 10px;
+	font-size: 12px;
+	font-style: normal
+}
+
+cite img {
+	margin-right: 5px;
+	margin-top: 5px;
+}
+
+/* - Video Homepage - */
+
+.video { 
+	width: 100%; 
+	height: 100%; 
+	float:left; 
+	position: relative; 
+	overflow:hidden;
+}
+
+.video iframe {
+	position: absolute; 
+	z-index: 0; 
+	width: 120%; 
+	left:-10%; 
+	top:0;
+}
+
+.video .video-overlay{ 
+	width:100%; 
+	height:100%; 
+	position:absolute;
+	background:#171720; 
+	opacity:0.95; 
+	left:0; 
+	top:0; 
+	z-index:20;
+}
+
+/* - Twitter widget - */
+
+.twitter-widget {
+	min-height: 200px;
+	height: auto;
+}
+
+.twitter-widget-header {
+	font-size: 30px
+}
+
+.twitter-widget .swiper-pagination  {
+	padding-top: 200px !important;
+}
+
+.twitter-widget .tweet {
+	color:$text-color;
+	padding: 100px 0 !important
+}
+
+.twitter-widget .tweet-footer {
+	color:$text-color-semi;
+	display: block;
+}
+
+/* - Featured - */
+
+.featured {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url("../images/featured.png");
+	background-repeat: no-repeat; 
+	background-size: 25px 25px
+}

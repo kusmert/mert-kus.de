@@ -1,0 +1,115 @@
+/* 
+======================================================================== 
+
+TARDO: theme.css
+Main Theme CSS file
+
+@Author: Andrew ch 
+@URL: http://andrewch.eu
+ 
+This is the file you need to edit to change the look of the theme.
+
+======================================================================== 
+
+- // TABLE OF CONTENTS // -
+
+ 1. Typography
+ 2. Header
+ 3. Footer
+ 4. Componets
+ 5. Utilities
+ 6. Dividers
+ 7. Background Images
+ 8. Font icons
+ 9. Buttons
+10. Gallery
+11. Top Hits
+12. Contact Page
+13. On-Scroll Animations
+14. Counters
+15. Blog
+16. Discography
+17. Masonry
+18. Magnific Popup
+19. Animate.css
+20. Swiper Slider
+21. Pace Theme
+22. Audio Player
+
+======================================================================== 
+*/
+
+// Theme
+//======================
+@import "src/theme/variables";
+@import "src/theme/mixins";
+@import "src/theme/hover";
+
+// Typography 
+@import "src/theme/typography";
+
+// Header 
+@import "src/theme/header";
+
+// Footer
+@import "src/theme/footer";
+
+// Components 
+@import "src/theme/componets";
+
+// Utilties 
+@import "src/theme/utilities";
+
+// Dividers 
+@import "src/theme/divider";
+
+// Background  images
+@import "src/theme/backgroundimg";
+
+// Font icons
+@import "src/theme/fonticons";
+
+// Buttons
+@import "src/theme/buttons";
+
+// Gallery
+@import "src/theme/portofolio";
+
+// Top Hits
+@import "src/theme/top-hits-player";
+
+// Contact Page
+@import "src/theme/contact-page";
+
+// On Scroll Animations
+@import "src/theme/on-scroll-animations";
+
+// Counters
+@import "src/theme/counters";
+
+// Blog
+@import "src/theme/blog";
+
+// Discography
+@import "src/theme/discography";
+
+// Plugins
+//======================
+
+// Masonry
+@import "src/theme/masonry";
+
+// Magnific Popup
+@import "src/theme/magnific-popup";
+
+// Animations (Animate.css)
+@import "src/theme/animations-source";
+
+// Swiper Slider
+@import "src/theme/swiper-slider";
+
+// Pace Theme
+@import "src/theme/pace-theme";
+
+//Audio Player
+@import "src/theme/audio-player.scss";

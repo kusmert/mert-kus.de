@@ -1,0 +1,413 @@
+/* HEADER */
+/* ===================================== */
+
+.nav {
+	z-index: 1;
+	height: 0px;
+	padding: 0;
+}
+
+.navbar-default {
+	padding: 0 !important;
+	margin: 0 !important;
+	height: 0px;
+	z-index: 999;
+}
+
+.navbar {
+	height: 0px;
+	padding: 0 !important;
+	margin: 0 !important
+}
+
+.navbar-collapse.in {
+	z-index: 999;
+	height: 200px;
+	background-color: $color-dark;
+}
+
+@media screen and (max-width: 768px) {
+	.navbar-toggle {
+		position: absolute;
+		top: 105px;
+		right: 8%;
+	}
+	.navbar-collapse {
+		padding-left: 60px;
+	}
+	.nav {
+		margin-top: 20px;
+	}
+}
+
+.navbar-toggle {
+	color: #FFF;
+	cursor: pointer;
+	z-index: 999;
+}
+
+.icon-bar {
+	margin: 5px 0;
+	width: 30px;
+}
+
+.nav li a{
+	min-width: 0px;
+	width: auto;
+	padding:0px 0px 10px 0px;
+	margin:100px 40px 0px 0px;
+	text-transform: uppercase;
+	@include underline-from-left;
+}
+
+.navbar-brand {
+	position: fixed;
+	top:75px;
+	left: 8%;
+	margin-right: 50px;
+	z-index: 999;
+}
+
+.navbar-brand img {
+	image-rendering: -webkit-optimize-contrast;
+	height: 77px;
+	width: 60px
+}
+
+@media screen and (max-width: 1610px) {
+	.navbar-brand {
+		position: relative;
+		display: inline-block;
+		width: 100px;
+		text-align: left !important;
+	}
+}
+
+@media screen and (min-width: 2010px) {
+	.navbar-brand {
+		left: 15%;
+	}
+}
+
+@media only screen and (min-width:767px) and (max-width: 991px) {
+	.navbar-collapse {
+		margin-left: 10px !important;
+		margin-top: 0;
+		margin-right: 0;
+	}
+
+	.navbar-collapse a {
+		margin-right: 30px !important;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.navbar-brand {
+		left: 3%;
+	}
+}
+
+.collapse.in {
+	border-top: 0px !important;
+	border-color:transparent !important;
+	z-index: 999;
+}
+
+/* - Dropdown Menu - */
+
+.dropdown-menu {
+	background-color: $color-dark;
+	@include transition(.2s);
+	@include box-shadow;
+}
+
+.dropdown-menu > li > a{
+	padding-top: 10px;
+	color:rgba(255,255,255,0.2);
+	padding-left: 5px;
+	margin-top: 0 !important;
+	@include transition(.2s);
+}
+
+.dropdown-menu > li:hover{
+	background-color: none;
+}
+
+.dropdown-menu > li > a:hover{
+	background-color: rgba(255,255,255,0.0) !important;
+}
+
+/* - Mobile Sidebar - */
+
+.mobile-sidebar-msg i{
+	font-size: 10px;
+}
+
+.content.expanded .expander>span{
+	@include rotate(65deg);
+}
+
+.mobile-menu-btn-close {
+	position: absolute;
+	top: 0px;
+	left: 25px;
+	background-color: transparent;
+	border:0px;
+	outline:0px;
+	font-size: 25px;
+	color: $color-primary;
+}
+
+/* General styles for all menus */
+.cbp-spmenu {
+	position: fixed;
+	padding: 0;
+	margin: 0 !important;
+	overflow-x: hidden;
+	overflow-y: visible;
+	display: block;
+	visibility: visible;
+	background:$sidebar-background;
+	background-size:cover;
+	padding-top: 30px;
+	padding-left: 30px;
+}
+
+.cbp-spmenu img{
+	margin-left: 20px;
+}
+
+.navbar-fixed-top .cbp-spmenu {
+	bottom: 0;
+}
+
+/* Orientation-dependent styles for the content of the menu */
+
+.cbp-spmenu-vertical {
+	width: 400px;
+	height: 100%;
+	top: 0;
+	z-index: 1000;
+}
+
+.cbp-spmenu-horizontal {
+	width: 400px;
+	height: 150px;
+	left: 0;
+	z-index: 1000;
+	overflow: hidden;
+}
+
+.cbp-spmenu-horizontal h3 {
+	height: 600px;
+	width: 20%;
+	float: left;
+}
+
+.cbp-spmenu-horizontal a {
+	float: left;
+	width: 20%;
+	padding: 0.8em;
+	border-left: 1px solid #258ecd;
+}
+
+/* Vertical menu that slides from the left or right */
+
+.cbp-spmenu-left {
+	left: -400px;
+}
+
+.cbp-spmenu-right {
+	right: -400px;
+}
+
+.cbp-spmenu-left.cbp-spmenu-open,  .cbp-spmenu-push-toright .navbar-fixed-top .cbp-spmenu-left.cbp-spmenu-open {
+	left: 0px;
+}
+
+.cbp-spmenu-right.cbp-spmenu-open,  .cbp-spmenu-push-toleft .navbar-fixed-top .cbp-spmenu-right.cbp-spmenu-open {
+	right: 0px;
+}
+
+/* Horizontal menu that slides from the top or bottom */
+.cbp-spmenu-top {
+	top: -150px;
+}
+
+.cbp-spmenu-bottom {
+	bottom: -150px;
+}
+
+.cbp-spmenu-top.cbp-spmenu-open {
+	top: 0px;
+}
+
+.cbp-spmenu-bottom.cbp-spmenu-open {
+	bottom: 0px;
+}
+
+/* Push classes applied to the body */
+.cbp-spmenu-push {
+	overflow-x: hidden;
+	position: relative;
+	left: 0;
+}
+.cbp-spmenu-push-toright,  .cbp-spmenu-push-toright .navbar-fixed-top {
+	left: 400px;
+}
+
+.cbp-spmenu-push-toleft,  .cbp-spmenu-push-toleft .navbar-fixed-top {
+	left: -400px;
+}
+
+/* Transitions */
+.cbp-spmenu,  .cbp-spmenu-push,  .navbar {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	transition-duration: 500ms;
+	-webkit-transition-duration: 500ms;
+	transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+	-webkit-transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1)
+
+}
+
+/* content style */
+.cbp-spmenu ul {
+	margin: 60px 0px 60px 15px;
+	padding: 0;
+	list-style: none;
+	width: 400px;
+	position: relative;
+	z-index: 99999; 
+}
+
+.cbp-spmenu ul li {
+	width: 100%;
+}
+
+.cbp-spmenu ul li > a {
+	display: inline-block;
+	padding: 4px 0;
+	outline: none;
+	color: #848491;
+	font-size: 14px;
+	font-weight: 400;
+	text-decoration: none; 
+}
+
+.cbp-spmenu ul li > a:hover {
+	text-decoration: none;
+	background: none;
+	color: #e74c3c; 
+}
+
+.cbp-spmenu ul li > a:focus {
+	text-decoration: none;
+	background: none;
+	color: #e74c3c; 
+}
+
+.cbp-spmenu ul li ul {
+	width: 400px;
+	background: none;
+	margin: 0;
+	padding: 0px 0px 0px 15px; 
+}
+
+.cbp-spmenu ul li ul li {
+	background: none; 
+}
+
+.cbp-spmenu ul li ul li a {
+	font-size: 13px;
+	padding:0px 0; 
+}
+
+.cbp-spmenu .dropdown-menu {
+	border: none;
+	box-shadow: none; 
+}
+
+.cbp-spmenu .copyright {
+	width: 100%;
+	float: left;
+	position: absolute;
+	bottom: 0;
+	text-align: left;
+	font-size: 10px;
+	text-transform: uppercase; 
+}
+
+.cbp-spmenu-push-toright:after {
+	content: '';
+	width: 600px;
+	height: 600px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: rgba(0, 0, 0, 0.3);
+	z-index: 20; 
+}
+
+
+/* - Menu list - */
+
+.mobile-menu {
+	list-style-type: none;
+	text-transform: uppercase;
+	padding-left: 38px;
+	padding-top: 38px;
+	position: relative;
+}
+
+.mobile-menu li a {
+	margin: 5px 0;
+	color:rgba(255,255,255,0.5);
+	@include underline-from-left;
+	position: relative;
+}
+
+.mobile-dropdown-menu {
+	list-style-type: none;
+	padding-left: 10px
+}
+
+.mobile-dropdown-menu li:before {
+	content: "/";
+	opacity: .5;
+	color: $color-primary;
+	margin-right: 5px;
+	font-size: 12px
+}
+
+.mobile-sidebar-msg {
+	position: absolute;
+	bottom: 0;
+	font-size: 10px;
+	text-align:center;
+	padding-left: 17px; 
+}
+
+
+@media only screen and (max-width: 640px), only screen and (max-device-width: 640px) {
+	.cbp-spmenu ul { 
+		width:100%;
+	}
+
+	.cbp-spmenu-vertical {
+		width: 320px;
+	}
+
+	.cbp-spmenu-left {
+		left: -320px;
+	}
+
+	.cbp-spmenu-right {
+		right: -320px;
+	}
+
+	.cbp-spmenu-push-toleft, .cbp-spmenu-push-toleft .navbar-fixed-top { 
+		left:-320px;
+	}
+}

@@ -1,0 +1,18 @@
+/* DIVIDER CLASSES */
+/* ===================================== */
+
+/* - Symbol Divider */
+
+ul.symbol-divider {
+	list-style: none;
+	padding:0;
+	margin:0;
+}
+
+ul.symbol-divider li { 
+	padding-left: 1em; 
+	text-indent: -.7em;
+	display: inline-block
+}
+
+

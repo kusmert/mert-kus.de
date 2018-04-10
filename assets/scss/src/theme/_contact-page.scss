@@ -1,0 +1,138 @@
+/* CONTACT PAGE */
+/* ===================================== */
+
+/* - Google Map - */
+
+.google-map {
+	height: 500px;
+		img {
+			max-width: inherit;
+		}
+		&.map-small {
+			height: 354px;
+		}
+}
+
+.map-overlay {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 100px;
+		.container {
+			position: relative;
+		}
+}
+
+.map-marker-label{
+	background-color: $background-map-label;
+	color: $text-color;
+	width:150px;
+	padding:10px;
+	text-align:center;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+.map-marker-label:after {
+	background-image: url("../images/svg/shape-triangle.svg");
+}
+
+@media (max-width: 767px) {
+	#map {
+		height: 200px;
+	}
+}
+
+/* - Contact Form - */
+
+/* - Form - */
+
+::-webkit-input-placeholder { /* WebKit browsers */
+	color:    #ecf0f1;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+color:    #ecf0f1;
+	opacity:  1;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+color:    #ecf0f1;
+	opacity:  1;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+	color:    #ecf0f1;
+}
+
+form.contact-form input[type=text], form.contact-form input[type=email]{
+	margin-top:20px;
+	padding:8px;
+	padding-left:40px;
+	border-radius:1%;
+	border:none;
+	height: 40px;
+	width: 100%;
+	outline-left: black 1px solid;
+	color:#ecf0f1;
+	background-color: $color-light;
+}
+
+form.contact-form textarea{
+	margin-top:20px;
+	padding:8px;
+	padding-left:40px;
+	border-radius:1px;
+	border:none;
+	min-height: 240px;
+	width: 100%;
+	resize: vertical;
+	color:#ecf0f1;
+	background-color: $color-light;
+}
+
+form.contact-form input:focus {
+	outline: none; 
+	border-left: 2px solid;
+}
+
+form.contact-form textarea:focus { 
+	outline: none; 
+	border-left: 2px solid;
+}
+
+form.contact-form input.contact-form-submit {
+	padding: 0 !important;
+	margin: 20px 0px 0px 0px;
+	width: 100px;
+	height: 35px; 
+}
+
+@media (max-width: 991px) {
+	form.contact-form input.contact-form-submit {
+		margin: 20px 0px 20px 0px;
+	}
+}
+
+/* - Input Icons - */
+
+.form-input-icon i{
+	position: absolute;
+	bottom:11px;
+	padding:0px 15px;
+	color: #e74c3c;
+	font-size: 12px;
+}
+
+.form-textarea-icon i{
+	position: absolute;
+	top:35px;
+	padding:0px 15px;
+	color: #e74c3c;
+	font-size: 12px;
+}
+
+.form-message-icon {
+	font-size:12px;
+}

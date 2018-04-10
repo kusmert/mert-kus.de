@@ -1,0 +1,113 @@
+/* Discography */
+/* ===================================== */
+
+/* - Discography single */
+
+.discography-list {
+	padding-left: 45px
+}
+
+.discography-cd-info {
+	color:$text-color;
+	margin-left: 20px !Important;
+	width: 100%;
+}
+
+.discography-cd-info .title {
+	margin-bottom: 0px !Important;
+	text-transform: uppercase;
+}
+
+.discography-cd-info span.subtitle {
+	opacity:.5;
+	font-family: 'Monsterrat', sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+	display: block;
+}
+
+/* - Discography List - */
+
+ul.discography-cd-list {
+	list-style: none;
+	margin: 0 !important;
+	padding: 20px 20px 20px 25px;
+	position: relative
+}
+
+ul.discography-cd-list li {
+	margin: 0px;
+	padding: 0;
+	position: relative;
+}
+
+ul.discography-cd-list li hr {
+	opacity:.1;
+}
+
+ul.discography-cd-list li span.track-title {
+	font-size: 20px;
+	font-weight: 600;
+	color: $text-color;
+	text-transform: uppercase;
+	padding-right: 0;
+	cursor: default;
+}
+
+ul.discography-cd-list li span.track-title .duration{
+	font-size: 12px;
+	font-weight: 600;
+	color: $text-color;
+	text-transform: uppercase;
+	opacity:.5;
+	cursor: default;
+}
+
+ul.discography-cd-list li span.player-icon {
+	position: absolute;
+	left: -40px !important;
+	color:$text-color;
+	top: 10px
+}
+
+ul.discography-cd-list li .cd-price {
+	display: block;
+	color:$text-color;
+	opacity:.7;
+	font-size: 14px;
+	cursor: default;
+}
+
+ul.discography-cd-list li .cd-price i {
+	cursor: pointer;
+}
+
+ul.discography-cd-list li .player-utilities {
+	margin-top: 18px
+} 
+
+ul.discography-cd-list li .player-utilities i{
+	cursor: pointer
+} 
+
+/* - Discography CD Wiki - */
+
+.discography-cd-wiki {
+	margin-top: 10px
+}
+
+.discography-cd-wiki a {
+	margin-top: 20px;
+}
+
+.wiki-title {
+	font-size: 14px;
+	display: block;
+	margin-top:5px;
+}
+
+.wiki-title span {
+	font-size: 14px;
+	opacity:.7;
+	font-weight: 400 !Important;
+}

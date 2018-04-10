@@ -1,0 +1,122 @@
+/* ISOTOPE */
+/* ===================================== */
+
+.portfolio-item {
+	z-index: 2;
+	transform:translate3d(0,0,0);
+	-webkit-transform:translate3d(0,0,0);
+	-moz-transform:translate3d(0,0,0);
+}
+
+.isotope-hidden.portfolio-item {
+	pointer-events: none;
+	z-index: 1;
+	transform:translate3d(0,0,0);
+	-webkit-transform:translate3d(0,0,0);
+	-moz-transform:translate3d(0,0,0);
+}
+
+.isotope,
+.isotope .portfolio-item, .isotope .portfolio-item, .isotope .post-item {
+	-webkit-transition-duration: 0.8s;
+	-moz-transition-duration: 0.8s;
+	-ms-transition-duration: 0.8s;
+	-o-transition-duration: 0.8s;
+	transition-duration: 0.8s;
+}
+
+.isotope {
+	-webkit-transition-property: height, width;
+	-moz-transition-property: height, width;
+	-ms-transition-property: height, width;
+	-o-transition-property: height, width;
+	transition-property: height, width;
+}
+
+.isotope .portfolio-item, .isotope .post-item {
+	-webkit-transition-property: -webkit-transform, opacity;
+	-moz-transition-property:    -moz-transform, opacity;
+	-ms-transition-property:     -ms-transform, opacity;
+	-o-transition-property:      -o-transform, opacity;
+	transition-property:         transform, opacity;
+}
+
+.isotope.no-transition,
+.isotope.no-transition .portfolio-item,
+.isotope .portfolio-item.no-transition,
+.isotope.no-transition .post-item,
+.isotope .post-item.no-transition {
+	-webkit-transition-duration: 0s;
+	-moz-transition-duration: 0s;
+	-ms-transition-duration: 0s;
+	-o-transition-duration: 0s;
+	transition-duration: 0s;
+}
+
+.isotope.infinite-scrolling {
+	-webkit-transition: none;
+	-moz-transition: none;
+	-ms-transition: none;
+	-o-transition: none;
+	transition: none;
+}
+
+#infscr-loading {
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	text-align: center;
+	padding: 10px;
+	box-sizing: border-box;
+	margin-left: -82px;
+	font-size: 13px;
+	color: #fff;
+	border-radius: 3px;
+		img {
+			display: none;
+		}
+}
+
+/* - Filters - */
+
+.rotated {
+	@include rotate(405deg);
+}
+
+.data-filter-toggle {
+	background-color: rgba(255,255,255,0.0);
+	font-size: 40px;
+	border:0px;
+	vertical-align: middle;
+	@include transition(.2s);
+		&:focus {
+			outline:0px;
+			outline: none;
+		}
+}
+
+.data-filter-categories {
+	list-style-type: none;
+	display: inline-block;
+	visibility: hidden;
+	text-transform: uppercase;
+}
+
+.data-filter-categories li a{
+	cursor: pointer;
+	opacity: .7;
+	@include underline-from-left;
+		&:hover {
+			opacity: 1;
+		}
+}
+
+.filter-visible {
+	visibility: visible;
+	@include transition-delay(.2s);
+}
+
+.data-filter-categories li {
+	display: inline-block;
+	margin: 10px 0px 0px 5px;
+}

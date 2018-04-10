@@ -1,0 +1,76 @@
+/* FOOTER */
+/* ===================================== */
+
+.footer-margin {
+	margin-bottom: 250px;
+}
+
+.footer-placeholder {
+	width: 100%;
+	height: 250px;
+	position: relative;
+}
+
+footer {
+	width: 100%;
+	min-height: 250px;
+	height: 250px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 0;
+	&.footer-dark{
+		background-color: $color-dark;
+	}
+	&.footer-semi-dark {
+		background-color: $color-light;
+	}
+}
+
+/* - Social icons - */
+
+ul.social-icons {
+	list-style:none;
+	display: inline-block;
+	margin-bottom: 40px; /* Margin bottom the padding of the copyright's wrap */
+}
+
+ul.social-icons li {
+	display: inline-block;
+	font-size: 24px;
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+ul.social-icons li:not(:first-child):before {
+	content:'\\';
+	color:$color-primary;
+	font-size: 10px;
+	margin: 0 10px;
+	vertical-align: middle;
+	opacity:.5
+}
+
+/* -  Copyright - */
+
+.copyright-wrap {
+	position: absolute;
+	bottom: 0;
+	font-size: 12px;
+	max-width: 100%;
+	width: 100%;
+	padding: 20px 20px;
+	float: left;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+}
+
+.copyright-wrap i {
+	font-size: 10px
+}
+
+hr.copyright-hr {
+	height: 2px;
+	opacity:.1;
+	max-width: 100%;
+}

@@ -1,0 +1,124 @@
+/* BLOG */
+/* ===================================== */
+
+.blog-post {
+	padding-bottom: 40px;
+	position: relative !Important;
+	display: block
+}
+
+.blog-post-image {
+	position: relative !Important;
+}
+
+.blog-post-info {
+	position: relative !Important;
+}
+
+.blog-navigation a object{
+	cursor: pointer;
+}
+
+.blog-list {
+	list-style: none;
+}
+
+.blog-list li:before {
+	content:'/';
+	color:$color-primary;
+}
+
+/* - Blog post overlay - */
+
+.blog-post-image .blog-post-overlay {
+	opacity: 0;
+	background-color: $color-light;
+	position: absolute;
+	top: 12px;
+	left: 12px;
+	bottom: 12px;
+	right: 12px;
+	z-index: 1;
+	@include transition (.2s);
+}
+
+.blog-post-image:hover .blog-post-overlay {
+	opacity: 1;
+	top: 10px;
+	left: 10px;
+	bottom: 10px;
+	right: 10px;
+}
+
+.portfolio-item:hover img {
+	opacity: .8;
+}
+
+/* - Overlay setup - */
+
+.blog-post-image .blog-post-overlay object {
+	width: 30px;
+	height: 30px;
+	top: 30px;
+	left: 30px;
+}
+
+.blog-post-overlay span.blog-post-overlay-title {
+	position: absolute;
+	bottom: 30px;
+	left: 30px;
+	margin-bottom: 24px;
+	color:$text-color;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+
+}
+
+.blog-post-overlay  span.blog-post-overlay-subtitle {
+	position: absolute;
+	bottom: 30px;
+	left: 30px;
+	color:$text-color-semi;
+	visibility: visible;
+}
+
+.blog-post-overlay :hover span.blog-post-overlay-subtitle {
+	animation:fadeInUp .2s;
+	-webkit-animation: fadeInUp .2s;
+}
+
+@media (max-width:700px) {
+	.blog-post-overlay span.blog-post-overlay-subtitle {
+		visibility: hidden
+	}
+
+	.blog-post-overlay {
+		visibility: hidden
+	}
+}
+
+/* - Blog tags - */
+
+ul.blog-post-tags {
+	list-style: none;
+	padding-left: 0 !Important;	
+}
+
+ul.blog-post-tags li {
+	display: inline-block;
+	color:$text-color;
+}
+
+/* - Blog social share - */
+
+ul.blog-post-social-share {
+	list-style: none;
+	padding-left: 0 !Important;
+	padding-top: 5px;	
+}
+
+ul.blog-post-social-share li {
+	display: inline-block;
+	color:$text-color;
+	margin-right: 5px;
+}

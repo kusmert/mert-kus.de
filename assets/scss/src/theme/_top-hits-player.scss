@@ -1,0 +1,155 @@
+/* TOP HITS */
+/* ===================================== */
+
+/* - Background color - */
+
+.background-cd-wrap {
+	background-color: rgba(23,23,32,.7);
+	width: 100%
+}
+
+/* - Vertical middle for CD */
+@media (min-width: 605px) {
+	.vertical-middle-cd, .vertical-bottom-cd {
+		display: table;
+			> * {
+				display: table-cell;
+				float: none;
+			}
+	}
+	.vertical-middle-cd > * {
+		vertical-align: middle;
+	}
+	.vertical-bottom-cd > * {
+		vertical-align: bottom;
+	}
+}
+
+.cd-info {
+	color:$text-color;
+	padding-left: 6%;
+	width: 100%;
+}
+
+.cd-cover img {
+	max-width: 200px !Important;
+	max-height: 200px !Important;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none; 
+}
+
+.cd-wrap {
+	margin: 0px 0;
+	padding: 20px;
+}
+
+/* .cd-wrap:after {
+	content:url("../images/svg/shape-triangle-circle-small.svg");
+	color:white;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	opacity:0.2;
+}
+ */
+ 
+@media (max-width:991px) {
+	.background-cd-wrap {
+		width:100%;
+	}
+}
+
+@media (max-width:991px) and (min-width:605px) {
+	.cd-wrap {
+		margin-bottom: 40px
+	} 
+}
+
+@media (max-width:605px) {
+	.cd-info p {
+		display: none
+	}
+
+	.cd-info {
+		padding-left: 0;
+		padding-top: 10px
+	}
+
+	.cd-wrap {
+		margin-top: 40px
+	} 
+}
+
+.cd-info .title {
+	margin-bottom: 0px !Important;
+	text-transform: uppercase;
+}
+
+.cd-info span.subtitle {
+	opacity:.5;
+	font-family: 'Monsterrat', sans-serif;
+	font-size: 12px;
+	text-transform: uppercase
+}
+
+.cd-info p {
+	margin-top: 15px
+}
+/* 
+.cd-info span.subtitle:after {
+	content: "//////////////////////////////////////////";
+	font-size: 10px;
+	margin-top:0px;
+	color:$text-color-primary;
+	font-weight: 900;
+	display: block;
+}
+ */
+.player-icons {
+	margin-top: 15px;
+}
+	
+.play-icon {
+	font-size: 40px;
+	cursor: pointer;
+	padding-right: 7px;
+	vertical-align: middle
+}
+
+.utilities i{
+	font-size: 16px;
+	cursor: pointer;
+	padding: 1px;
+	vertical-align: middle;
+	@include opacity (0.6);
+	@include transition(.2s);
+	&:hover {
+		@include opacity (1);
+	}
+}
+
+/* - Latest CD Single - */
+
+.latest-cd-value {
+	display: inline-block;
+	font-family: 'Monsterrat', sans-serif;
+}
+
+.latest-cd-counter {
+	margin-bottom: 20px;
+	margin-top: 20px
+}
+
+.latest-cd-hero {
+	max-width:100%;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none; 
+}

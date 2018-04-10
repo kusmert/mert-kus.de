@@ -1,0 +1,135 @@
+/* UTILITY CLASSES */
+/* ===================================== */
+
+/* - Margin elements - */
+
+.no-margin {
+	margin: 0 !important;
+}
+
+.margin-bottom {
+	margin-bottom: 24px !important;
+}
+
+.margin-top {
+	margin-top: 24px !important;
+}
+
+.margin-left {
+	margin-left: 24px !important;
+}
+
+.margin-right {
+	margin-right: 24px !important;
+}
+
+@media (max-width:991px) {
+	.small-screen-margin-top {
+		margin-top: 24px !important
+	}
+}
+
+/* - Padding elements - */
+
+.no-padding {
+	padding: 0 !important;
+}
+
+.padding-bottom {
+	padding-bottom: 24px !important;
+}
+
+.padding-top {
+	padding-top: 24px !important;
+}
+
+.padding-left {
+	padding-left: 24px !important;
+}
+
+.padding-right {
+	margin-right: 24px !important;
+}
+
+/* - Padded elements - */
+.padded {
+	margin-bottom: 24px;
+	padding-bottom: 24px;
+}
+
+.padded-big {
+	margin-bottom: 48px;
+	padding-bottom: 48px;
+}
+
+.padded-huge {
+	margin-bottom: 96px;
+	padding-bottom: 48px;
+}
+
+/* - Block behaviors */
+
+.block {
+	display: block !important;
+}
+
+.inline-block {
+	display: inline-block !important;
+}
+
+/* - Clear - */
+
+.clear {
+	clear: both;
+}
+
+/* - Disabled - */
+
+.disabled {
+	opacity: .5;
+}
+
+/* - Responsive images -*/
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* - Vertical Middle - */
+
+.vertical-middle, .vertical-bottom {
+	display: table;
+	width: 100%
+}
+.vertical-middle > *, .vertical-bottom > * {
+	display: table-cell;
+	float: none;
+	width: 100%
+}
+
+.vertical-middle > * {
+	vertical-align: middle;
+}
+
+.vertical-bottom > * {
+	vertical-align: bottom;
+}
+
+@media (min-width: 993px) {
+	.vertical-middle-desktop, .vertical-bottom-desktop {
+		display: table;
+	}
+	.vertical-middle-desktop > *, .vertical-bottom-desktop > * {
+		display: table-cell;
+		float: none;
+	}
+
+	.vertical-middle-desktop > * {
+		vertical-align: middle;
+	}
+
+	.vertical-bottom-desktop > * {
+		vertical-align: bottom;
+	}
+}
